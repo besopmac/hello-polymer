@@ -1,0 +1,20 @@
+{
+  "name": "hello-polymer",
+  "homepage": "https://github.com/brunonigro/hello-polymer",
+  "authors": [
+    "Bruno Nigro <brunosopmac@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "polymer/polymer#^1.9.1"
+  }
+}

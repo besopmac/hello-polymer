@@ -1,0 +1,33 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+
+<dom-module id="hello-polymer">
+  <template>
+    <h1 id="welcome">Hello, Polymer! {{name}}</h1>
+    <p id="desc">Lorem dolor sit amet muito legal escrever assim</p>
+  </template>
+
+  <script>
+    // Criando instancia do Shadow DOM
+    Polymer({
+      is: 'hello-polymer',
+      properties: {
+        name: {
+          type: String,
+          value: "Madafaka"
+        }
+      },
+      // Declarando Listeners
+      listeners: {
+        'welcome.tap': 'write',
+        'desc.tap': 'writeSpecial'
+      },
+      // Método
+      write: function() {
+        console.log('done')
+      },
+      writeSpecial: function() {
+        console.log('great')
+      }
+    });
+  </script>
+</dom-module>
